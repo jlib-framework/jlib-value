@@ -22,13 +22,12 @@
 package org.jlib.value.formatter;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class MessageFormatNamedValueFormatterTest {
 
     @Test
-    public void emptyTemplateShouldProduceEmptyString()
-        throws Exception {
+    public void emptyTemplateShouldProduceEmptyString() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("");
@@ -41,8 +40,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void namePlaceholderShouldOnlyProduceName()
-        throws Exception {
+    public void namePlaceholderShouldOnlyProduceName() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("++ {0} **");
@@ -55,8 +53,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void valuePlaceholderShouldProduceNameValue()
-        throws Exception {
+    public void valuePlaceholderShouldProduceNameValue() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("... {1}");
@@ -69,8 +66,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void nameValuePlaceholderShouldProduceNameValue()
-        throws Exception {
+    public void nameValuePlaceholderShouldProduceNameValue() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("{0}: {1}");
@@ -83,8 +79,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void textNameValuePlaceholderShouldProduceTextNameValue()
-        throws Exception {
+    public void textNameValuePlaceholderShouldProduceTextNameValue() {
         // given
         final StringBuilder builder = new StringBuilder("This is a text ... ");
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("{0}: {1}");
@@ -97,8 +92,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void nameValueExtraPlaceholderShouldProduceNameValueAndExtraString()
-        throws Exception {
+    public void nameValueExtraPlaceholderShouldProduceNameValueAndExtraString() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("{0}: {1} {2}");
@@ -111,8 +105,7 @@ public class MessageFormatNamedValueFormatterTest {
     }
 
     @Test
-    public void wrongPlaceholderShouldProduceWrongString()
-        throws Exception {
+    public void wrongPlaceholderShouldProduceWrongString() {
         // given
         final StringBuilder builder = new StringBuilder();
         final NamedValueFormatter<Object> formatter = new MessageFormatNamedValueFormatter("%s: %s {0}");
