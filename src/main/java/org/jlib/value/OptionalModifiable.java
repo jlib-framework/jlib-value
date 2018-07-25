@@ -21,8 +21,6 @@
 
 package org.jlib.value;
 
-import org.checkerframework.checker.nullness.qual.Nullable;
-
 public class OptionalModifiable<Value>
     implements Modifiable<Value> {
 
@@ -47,7 +45,7 @@ public class OptionalModifiable<Value>
         return new OptionalModifiable<>(value);
     }
 
-    public static <Value> OptionalModifiable<Value> ofNullable(@Nullable final Value value) {
+    public static <Value> OptionalModifiable<Value> ofNullable(final Value value) {
         return value != null ?
                of(value) :
                new OptionalModifiable<>();
