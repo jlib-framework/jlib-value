@@ -19,7 +19,6 @@
  *     limitations under the License.
  */
 
-
 plugins {
     id 'java'
     id 'base'
@@ -29,5 +28,9 @@ plugins {
     id 'net.researchgate.release' version '2.6.0'
 }
 
-apply from: 'jlib.gradle'
+version = '1.0.0-SNAPSHOT'
 
+description = 'jlib value transfer, reference and manipulation framework'
+ext.detailedDescription = 'jlib framework providing means to carry, name and modify values in a call-by-reference-like manner'
+
+apply from: 'jlib.gradle'

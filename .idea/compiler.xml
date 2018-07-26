@@ -7,10 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jlib-value" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jlib-awslambda-logback_main" target="1.8" />
+      <module name="jlib-awslambda-logback_test" target="1.8" />
       <module name="jlib-value" target="8" />
       <module name="jlib-value_main" target="1.8" />
       <module name="jlib-value_test" target="1.8" />
