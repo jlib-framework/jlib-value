@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/jlib-value.iml" filepath="$PROJECT_DIR$/jlib-value.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-value.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-value.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-value_main.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-value_main.iml" group="jlib-value" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/jlib-value_test.iml" filepath="$PROJECT_DIR$/.idea/modules/jlib-value_test.iml" group="jlib-value" />
     </modules>
